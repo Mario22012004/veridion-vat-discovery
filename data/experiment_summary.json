@@ -1,0 +1,460 @@
+{
+  "run_utc": "2026-11-17T16:40:09+00:00",
+  "n_companies": 60,
+  "wall_clock_s": 137.9,
+  "coverage_by_tier": {
+    "A": {
+      "n": 15,
+      "domain_found": 13,
+      "domain_confidence": {
+        "medium": 6,
+        "high": 7,
+        "none": 2
+      },
+      "domain_source": {
+        "wikidata_crn": 5,
+        "clearbit": 5,
+        "bing": 2,
+        "none": 2,
+        "name_guess": 1
+      },
+      "site_reachable": 13,
+      "vat_text_on_site": 7,
+      "verified_match": 4,
+      "verified_match_rate": 0.267,
+      "outcomes": {
+        "verified_match": 4,
+        "no_vat_on_site": 6,
+        "no_domain_found": 2,
+        "related_entity_only": 3
+      }
+    },
+    "B": {
+      "n": 25,
+      "domain_found": 12,
+      "domain_confidence": {
+        "none": 13,
+        "medium": 4,
+        "high": 8
+      },
+      "domain_source": {
+        "none": 13,
+        "name_guess": 3,
+        "clearbit": 9
+      },
+      "site_reachable": 12,
+      "vat_text_on_site": 3,
+      "verified_match": 2,
+      "verified_match_rate": 0.08,
+      "outcomes": {
+        "no_domain_found": 13,
+        "no_vat_on_site": 9,
+        "verified_match": 2,
+        "vat_candidates_invalid": 1
+      }
+    },
+    "C": {
+      "n": 20,
+      "domain_found": 5,
+      "domain_confidence": {
+        "none": 15,
+        "medium": 1,
+        "low": 1,
+        "high": 3
+      },
+      "domain_source": {
+        "none": 15,
+        "clearbit": 2,
+        "name_guess": 3
+      },
+      "site_reachable": 5,
+      "vat_text_on_site": 0,
+      "verified_match": 0,
+      "verified_match_rate": 0.0,
+      "outcomes": {
+        "no_domain_found": 15,
+        "no_vat_on_site": 5
+      }
+    }
+  },
+  "overall": {
+    "verified_match": 6,
+    "verified_match_rate": 0.1,
+    "outcomes": {
+      "verified_match": 6,
+      "no_vat_on_site": 20,
+      "no_domain_found": 30,
+      "related_entity_only": 3,
+      "vat_candidates_invalid": 1
+    },
+    "match_classes_of_assigned": {
+      "match": 6
+    }
+  },
+  "candidate_funnel": {
+    "total_9digit_spans": 113,
+    "naive_spans": 71,
+    "naive_checksum_fail": 70,
+    "naive_checksum_pass": 1,
+    "vat_specific_spans": 42,
+    "foreign_vat_spans": 0,
+    "unique_vrns_hmrc_checked": 17,
+    "by_pattern_and_context": {
+      "gb_prefix|vat": {
+        "n": 5,
+        "checksum_pass": 3,
+        "hmrc_valid": 3,
+        "hmrc_checked": 5
+      },
+      "naive|none": {
+        "n": 29,
+        "checksum_pass": 1,
+        "hmrc_valid": 0,
+        "hmrc_checked": 11
+      },
+      "naive|phone": {
+        "n": 42,
+        "checksum_pass": 0,
+        "hmrc_valid": 0,
+        "hmrc_checked": 16
+      },
+      "vat_context|vat": {
+        "n": 28,
+        "checksum_pass": 28,
+        "hmrc_valid": 28,
+        "hmrc_checked": 28
+      },
+      "jsonld|vat": {
+        "n": 9,
+        "checksum_pass": 9,
+        "hmrc_valid": 9,
+        "hmrc_checked": 9
+      }
+    },
+    "theoretical_random_checksum_pass_rate": 0.0206
+  },
+  "precision_ladder": [
+    {
+      "stage": "all_9digit_spans (naive regex)",
+      "kept_spans": 62,
+      "target_verified": 7,
+      "precision": 0.113
+    },
+    {
+      "stage": "vat_specific_pattern (GB/VAT-context/JSON-LD)",
+      "kept_spans": 11,
+      "target_verified": 7,
+      "precision": 0.636
+    },
+    {
+      "stage": "vat_specific + checksum_valid",
+      "kept_spans": 10,
+      "target_verified": 7,
+      "precision": 0.7
+    },
+    {
+      "stage": "+ HMRC valid",
+      "kept_spans": 10,
+      "target_verified": 7,
+      "precision": 0.7
+    },
+    {
+      "stage": "+ entity match (pipeline output)",
+      "kept_spans": 7,
+      "target_verified": 7,
+      "precision": 1.0
+    }
+  ],
+  "confusion_matrices": {
+    "checksum_vs_hmrc (unique company-VRN pairs sent to HMRC; truth = HMRC valid)": {
+      "TP": 9,
+      "FP": 1,
+      "FN": 0,
+      "TN": 7,
+      "precision": 0.9,
+      "recall": 1.0,
+      "n": 17
+    },
+    "vat_specific_regex_vs_verified_target (truth = HMRC valid AND entity match)": {
+      "TP": 6,
+      "FP": 4,
+      "FN": 0,
+      "TN": 7,
+      "precision": 0.6,
+      "recall": 1.0,
+      "n": 17
+    },
+    "full_pipeline_vs_verified_target": {
+      "TP": 6,
+      "FP": 0,
+      "FN": 0,
+      "TN": 11,
+      "precision": 1.0,
+      "recall": 1.0,
+      "n": 17
+    },
+    "naive_baseline_first_vat_number_per_company": {
+      "valid_match": 6,
+      "none": 50,
+      "valid_related_entity": 3,
+      "checksum_fail": 1
+    }
+  },
+  "timing_s": {
+    "t_discovery_s": {
+      "mean": 10.82,
+      "max": 62.21
+    },
+    "t_crawl_s": {
+      "mean": 1.8,
+      "max": 20.09
+    },
+    "t_verify_s": {
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "elapsed_s": {
+      "mean": 12.62,
+      "max": 62.21
+    }
+  },
+  "http_breakdown": {
+    "discovery_and_crawl": {
+      "crawl:200": 215,
+      "crawl:404": 120,
+      "domain_probe:200": 75,
+      "wikidata:200": 60,
+      "clearbit:200": 60,
+      "bing:200": 60,
+      "domain_guess_dns:resolved": 53,
+      "domain_probe_http:200": 14,
+      "domain_probe:ConnectTimeout": 10,
+      "domain_probe:SSLError": 10,
+      "domain_guess_dns:none_resolved": 7,
+      "domain_probe:403": 6,
+      "crawl:403": 5,
+      "domain_probe:DNSFailure": 4,
+      "domain_probe:ConnectionError": 3,
+      "crawl:500": 3,
+      "domain_probe_http:ConnectTimeout": 3,
+      "domain_probe_http:403": 3,
+      "domain_probe:439": 2,
+      "domain_probe:404": 2,
+      "domain_probe_http:404": 2,
+      "crawl:TooManyRedirects": 1,
+      "domain_probe_http:ConnectionError": 1,
+      "domain_probe:503": 1,
+      "domain_probe:418": 1
+    },
+    "hmrc_and_fallbacks": {}
+  },
+  "hmrc_outcomes": {
+    "not_found": 9,
+    "valid": 9
+  },
+  "false_positive_counts": {
+    "type1": 52,
+    "type1_checksum_fail": 51,
+    "type1_hmrc_not_found": 1,
+    "type2_third_party": 0,
+    "type2_vat_group_or_parent": 3
+  },
+  "hmrc_throttling": {
+    "result_pages_429": 0,
+    "result_pages_200": 0,
+    "posts": 0,
+    "backoff_and_resume_attempts_by_result_status": {},
+    "name_backoff": {
+      "attempts": [],
+      "still_pending": []
+    },
+    "note": "POST /enter-vat-details keeps returning 303 -> /known|/unknown while throttled, so validity is observable; the result page with the registered name returns 429 without Retry-After."
+  },
+  "examples": {
+    "verified": [
+      {
+        "company_name": "RENISHAW P L C",
+        "domain": "renishaw.com",
+        "verified_vat": "GB422900581",
+        "hmrc_name": "RENISHAW PLC",
+        "name_score": 100.0
+      },
+      {
+        "company_name": "TRAVIS PERKINS PLC",
+        "domain": "travisperkinsplc.co.uk",
+        "verified_vat": "GB408556737",
+        "hmrc_name": "TRAVIS PERKINS PLC",
+        "name_score": 100.0
+      },
+      {
+        "company_name": "RS COMPONENTS LIMITED",
+        "domain": "rscomponents.co.uk",
+        "verified_vat": "GB243164091",
+        "hmrc_name": "RS COMPONENTS LIMITED",
+        "name_score": 100.0
+      },
+      {
+        "company_name": "VICTREX PLC",
+        "domain": "victrex.com",
+        "verified_vat": "GB604782539",
+        "hmrc_name": "VICTREX PLC",
+        "name_score": 100.0
+      },
+      {
+        "company_name": "FOOTPRINT SOFTWARE LIMITED",
+        "domain": "footprintsoftware.co.uk",
+        "verified_vat": "GB887276955",
+        "hmrc_name": "FOOTPRINT SOFTWARE LTD",
+        "name_score": 100.0
+      },
+      {
+        "company_name": "LITTLE FIRE DIGITAL LIMITED",
+        "domain": "little-fire.com",
+        "verified_vat": "GB196097366",
+        "hmrc_name": "LITTLE FIRE DIGITAL LIMITED",
+        "name_score": 100.0
+      }
+    ],
+    "type1": [
+      {
+        "tier": "A",
+        "company_number": "00040932",
+        "vrn": "117356421",
+        "pattern": "naive",
+        "context": "none",
+        "checksum_valid": true,
+        "hmrc_outcome": "not_found",
+        "hmrc_name": null,
+        "name_score": null,
+        "match_class": "unknown",
+        "type2_subtype": null,
+        "page_url": "https://www.halma.com/site-services/cookie-notice",
+        "snippet": "a unique value for each page visited. 1 Day _gat_UA-11735642-1 This is a pattern-type cookie set by",
+        "target_name": "HALMA PUBLIC LIMITED COMPANY",
+        "fp_type": "type1_checksum_ok_hmrc_not_found"
+      },
+      {
+        "tier": "A",
+        "company_number": "00040932",
+        "vrn": "801894577",
+        "pattern": "naive",
+        "context": "phone",
+        "checksum_valid": false,
+        "hmrc_outcome": "not_found",
+        "hmrc_name": null,
+        "name_score": null,
+        "match_class": "unknown",
+        "type2_subtype": null,
+        "page_url": "https://www.halma.com/site-services/contact-us",
+        "snippet": "Great Portland Street London, W1W 7RT, UK Tel: +44 (0)7 801 894577 Email: [email protected]",
+        "target_name": "HALMA PUBLIC LIMITED COMPANY",
+        "fp_type": "type1_checksum_fail"
+      },
+      {
+        "tier": "A",
+        "company_number": "00040932",
+        "vrn": "262031651",
+        "pattern": "naive",
+        "context": "phone",
+        "checksum_valid": false,
+        "hmrc_outcome": "not_checked",
+        "hmrc_name": null,
+        "name_score": null,
+        "match_class": null,
+        "type2_subtype": null,
+        "page_url": "https://www.halma.com/site-services/contact-us",
+        "snippet": "20, 4009205760 Email: [email protected] Europe: Tel: +31 (0)262031651 Email: [email protected] India: Tel: +9",
+        "target_name": "HALMA PUBLIC LIMITED COMPANY",
+        "fp_type": "type1_checksum_fail"
+      },
+      {
+        "tier": "A",
+        "company_number": "00040932",
+        "vrn": "892016100",
+        "pattern": "naive",
+        "context": "phone",
+        "checksum_valid": false,
+        "hmrc_outcome": "not_checked",
+        "hmrc_name": null,
+        "name_score": null,
+        "match_class": null,
+        "type2_subtype": null,
+        "page_url": "https://www.halma.com/site-services/contact-us",
+        "snippet": "erth WA: 7 Ledgar Road, Balcatta, Perth, WA 6021 Tel: +61 8 9201 6100 Email: [email protected] Australia,",
+        "target_name": "HALMA PUBLIC LIMITED COMPANY",
+        "fp_type": "type1_checksum_fail"
+      },
+      {
+        "tier": "A",
+        "company_number": "00040932",
+        "vrn": "288666200",
+        "pattern": "naive",
+        "context": "phone",
+        "checksum_valid": false,
+        "hmrc_outcome": "not_checked",
+        "hmrc_name": null,
+        "name_score": null,
+        "match_class": null,
+        "type2_subtype": null,
+        "page_url": "https://www.halma.com/site-services/contact-us",
+        "snippet": "t B, 28/32 Egerton Street, Silverwater, NSW 2128 Tel: +61 2 8866 6200 Email: [email protected] Australia,",
+        "target_name": "HALMA PUBLIC LIMITED COMPANY",
+        "fp_type": "type1_checksum_fail"
+      }
+    ],
+    "type2_third_party": [],
+    "type2_vat_group_or_parent": [
+      {
+        "tier": "A",
+        "company_number": "05100353",
+        "vrn": "183850248",
+        "pattern": "vat_context",
+        "context": "vat",
+        "checksum_valid": true,
+        "hmrc_outcome": "valid",
+        "hmrc_name": "MARSHALLS MONO LTD",
+        "name_score": 81.8,
+        "match_class": "related_entity",
+        "type2_subtype": "vat_group_or_parent",
+        "page_url": "https://www.marshalls.co.uk/",
+        "snippet": "y, Elland, HX5 9HT Company number: 00509579 VAT number: 183 850 248 Terms and Conditions",
+        "target_name": "MARSHALLS PLC",
+        "fp_type": "type2_vat_group_or_parent"
+      },
+      {
+        "tier": "A",
+        "company_number": "03006378",
+        "vrn": "232555575",
+        "pattern": "vat_context",
+        "context": "vat",
+        "checksum_valid": true,
+        "hmrc_outcome": "valid",
+        "hmrc_name": "KINGFISHER PLC",
+        "name_score": 25.0,
+        "match_class": "related_entity",
+        "type2_subtype": "vat_group_or_parent",
+        "page_url": "https://www.screwfix.com/",
+        "snippet": "d 2026 - Company Registration no: 3006378 - VAT Registered: 232555575 - Powered by FusionX",
+        "target_name": "SCREWFIX DIRECT LIMITED",
+        "fp_type": "type2_vat_group_or_parent"
+      },
+      {
+        "tier": "A",
+        "company_number": "01393773",
+        "vrn": "235983531",
+        "pattern": "vat_context",
+        "context": "vat",
+        "checksum_valid": true,
+        "hmrc_outcome": "valid",
+        "hmrc_name": "COSTAIN ENGINEERING & CONSTR UCTION LIMI TED",
+        "name_score": 35.0,
+        "match_class": "related_entity",
+        "type2_subtype": "vat_group_or_parent",
+        "page_url": "https://www.costain.com/contact-us/",
+        "snippet": "3A 8BE Place of Registration: England & Wales VAT No. 235983531 +44 20 3922 0600",
+        "target_name": "COSTAIN GROUP PLC",
+        "fp_type": "type2_vat_group_or_parent"
+      }
+    ]
+  }
+}

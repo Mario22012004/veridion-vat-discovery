@@ -1,0 +1,2144 @@
+{
+  "run_utc": "2026-11-17T16:45:45+00:00",
+  "runtime_s": 307.9,
+  "diagnostic_companies": [
+    {
+      "tier": "A",
+      "company_number": "01106260",
+      "company_name": "RENISHAW P L C",
+      "postcode": "GL12 8JR"
+    },
+    {
+      "tier": "A",
+      "company_number": "00578327",
+      "company_name": "ROTORK P.L.C.",
+      "postcode": "BA1 3JQ"
+    },
+    {
+      "tier": "A",
+      "company_number": "00040932",
+      "company_name": "HALMA PUBLIC LIMITED COMPANY",
+      "postcode": "HP7 0DE"
+    },
+    {
+      "tier": "A",
+      "company_number": "00561597",
+      "company_name": "J.C. BAMFORD EXCAVATORS LIMITED",
+      "postcode": "ST14 5JP"
+    },
+    {
+      "tier": "B",
+      "company_number": "07911459",
+      "company_name": "STAPLEFORD PLUMBING SERVICES LTD",
+      "postcode": "NG9 8GR"
+    },
+    {
+      "tier": "B",
+      "company_number": "SC424482",
+      "company_name": "MILNCROFT CONSTRUCTION LIMITED",
+      "postcode": "G2 5SG"
+    },
+    {
+      "tier": "B",
+      "company_number": "05349397",
+      "company_name": "ELECTRODEX LIMITED",
+      "postcode": "NE16 6LR"
+    },
+    {
+      "tier": "B",
+      "company_number": "07499827",
+      "company_name": "ARMSON ELECTRICAL SERVICES LIMITED",
+      "postcode": "LE3 1HR"
+    },
+    {
+      "tier": "C",
+      "company_number": "NI731136",
+      "company_name": "ALLIGRA LTD",
+      "postcode": "BT5 7UB"
+    },
+    {
+      "tier": "C",
+      "company_number": "SC858700",
+      "company_name": "RL ELECTRICAL ENERGY SERVICES LTD",
+      "postcode": "AB56 5AF"
+    },
+    {
+      "tier": "C",
+      "company_number": "SC859755",
+      "company_name": "UNIKRAFT LIMITED",
+      "postcode": "G3 7RH"
+    },
+    {
+      "tier": "C",
+      "company_number": "SC854864",
+      "company_name": "PAPILLON CONSULTING LTD",
+      "postcode": "PH8 0AD"
+    }
+  ],
+  "sources": [
+    {
+      "source": "Companies House (public web register + REST API)",
+      "category": "company_registry",
+      "tests": [
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.506,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=RENISHAW+P+L+C",
+          "query": "RENISHAW P L C",
+          "n_results": 20,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/01106260",
+          "status": 200,
+          "elapsed_s": 0.091,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/01106260",
+          "company_number": "01106260",
+          "parsed": {
+            "company_name": "RENISHAW P L C",
+            "company_status": "Active",
+            "company_type": "Public limited Company",
+            "incorporation_date": "4 April 1973",
+            "sic_codes": [
+              "25620 - Machining",
+              "26120 - Manufacture of loaded electronic boards",
+              "26512 - Manufacture of electronic industrial process control equipment"
+            ],
+            "registered_address": "New Mills, Wotton Under Edge, Gloucestershire, GL12 8JR"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.093,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=ROTORK+P.L.C.",
+          "query": "ROTORK P.L.C.",
+          "n_results": 18,
+          "top_result_is_target": false,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00578327",
+          "status": 200,
+          "elapsed_s": 0.094,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/00578327",
+          "company_number": "00578327",
+          "parsed": {
+            "company_name": "ROTORK P.L.C.",
+            "company_status": "Active",
+            "company_type": "Public limited Company",
+            "incorporation_date": "12 February 1957",
+            "sic_codes": [
+              "70100 - Activities of head offices"
+            ],
+            "registered_address": "Rotork House, Brassmill Lane, Bath, BA1 3JQ"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.107,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=HALMA+PUBLIC+LIMITED+COMPANY",
+          "query": "HALMA PUBLIC LIMITED COMPANY",
+          "n_results": 20,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00040932",
+          "status": 200,
+          "elapsed_s": 0.098,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/00040932",
+          "company_number": "00040932",
+          "parsed": {
+            "company_name": "HALMA PUBLIC LIMITED COMPANY",
+            "company_status": "Active",
+            "company_type": "Public limited Company",
+            "incorporation_date": "13 April 1894",
+            "sic_codes": [
+              "70100 - Activities of head offices"
+            ],
+            "registered_address": "Misbourne Court, Rectory Way, Amersham, Buckinghamshire, HP7 0DE"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.104,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=J.C.+BAMFORD+EXCAVATORS+LIMITED",
+          "query": "J.C. BAMFORD EXCAVATORS LIMITED",
+          "n_results": 20,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/00561597",
+          "status": 200,
+          "elapsed_s": 0.183,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/00561597",
+          "company_number": "00561597",
+          "parsed": {
+            "company_name": "J.C. BAMFORD EXCAVATORS LIMITED",
+            "company_status": "Active",
+            "company_type": "Private limited Company",
+            "incorporation_date": "20 February 1956",
+            "sic_codes": [
+              "28922 - Manufacture of earthmoving equipment"
+            ],
+            "registered_address": "Lakeside Works, Rocester, Uttoxeter, ST14 5JP"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.189,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=STAPLEFORD+PLUMBING+SERVICES+LTD",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "n_results": 20,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/07911459",
+          "status": 200,
+          "elapsed_s": 0.145,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/07911459",
+          "company_number": "07911459",
+          "parsed": {
+            "company_name": "STAPLEFORD PLUMBING SERVICES LTD",
+            "company_status": "Active",
+            "company_type": "Private limited Company",
+            "incorporation_date": "16 January 2012",
+            "sic_codes": [
+              "43220 - Plumbing, heat and air-conditioning installation"
+            ],
+            "registered_address": "9 Moorbridge Lane, Stapleford, Nottingham, NG9 8GR"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.133,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=MILNCROFT+CONSTRUCTION+LIMITED",
+          "query": "MILNCROFT CONSTRUCTION LIMITED",
+          "n_results": 20,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/SC424482",
+          "status": 200,
+          "elapsed_s": 0.142,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/SC424482",
+          "company_number": "SC424482",
+          "parsed": {
+            "company_name": "MILNCROFT CONSTRUCTION LIMITED",
+            "company_status": "Active",
+            "company_type": "Private limited Company",
+            "incorporation_date": "18 May 2012",
+            "sic_codes": [
+              "41201 - Construction of commercial buildings"
+            ],
+            "registered_address": "206 C/O Ballantyne & Co, St Vincent Street, Glasgow, Scotland, G2 5SG"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.086,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=ELECTRODEX+LIMITED",
+          "query": "ELECTRODEX LIMITED",
+          "n_results": 1,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/05349397",
+          "status": 200,
+          "elapsed_s": 0.095,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/05349397",
+          "company_number": "05349397",
+          "parsed": {
+            "company_name": "ELECTRODEX LIMITED",
+            "company_status": "Active",
+            "company_type": "Private limited Company",
+            "incorporation_date": "1 February 2005",
+            "sic_codes": [
+              "43210 - Electrical installation"
+            ],
+            "registered_address": "20 Plover Drive, Burnopfield, Newcastle Upon Tyne, Tyne & Wear, NE16 6LR"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.225,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=ARMSON+ELECTRICAL+SERVICES+LIMITED",
+          "query": "ARMSON ELECTRICAL SERVICES LIMITED",
+          "n_results": 20,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/07499827",
+          "status": 200,
+          "elapsed_s": 0.096,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/07499827",
+          "company_number": "07499827",
+          "parsed": {
+            "company_name": "ARMSON ELECTRICAL SERVICES LIMITED",
+            "company_status": "Active",
+            "company_type": "Private limited Company",
+            "incorporation_date": "20 January 2011",
+            "sic_codes": [
+              "43210 - Electrical installation",
+              "43220 - Plumbing, heat and air-conditioning installation",
+              "43290 - Other construction installation",
+              "43320 - Joinery installation"
+            ],
+            "registered_address": "Unit 6 Forest Business Park, Oswin Road, Leicester, Leics, LE3 1HR"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.096,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=ALLIGRA+LTD",
+          "query": "ALLIGRA LTD",
+          "n_results": 1,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/NI731136",
+          "status": 200,
+          "elapsed_s": 0.115,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/NI731136",
+          "company_number": "NI731136",
+          "parsed": {
+            "company_name": "ALLIGRA LTD",
+            "company_status": "Active",
+            "company_type": "Private limited Company",
+            "incorporation_date": "7 July 2025",
+            "sic_codes": [
+              "62020 - Information technology consultancy activities"
+            ],
+            "registered_address": "252 Ballygowan Road, Crossnacreevy, Belfast, County Antrim, Northern Ireland, BT5 7UB"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.198,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=RL+ELECTRICAL+ENERGY+SERVICES+LTD",
+          "query": "RL ELECTRICAL ENERGY SERVICES LTD",
+          "n_results": 20,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/SC858700",
+          "status": 200,
+          "elapsed_s": 0.113,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/SC858700",
+          "company_number": "SC858700",
+          "parsed": {
+            "company_name": "RL ELECTRICAL ENERGY SERVICES LTD",
+            "company_status": "Active",
+            "company_type": "Private limited Company",
+            "incorporation_date": "12 August 2025",
+            "sic_codes": [
+              "43210 - Electrical installation"
+            ],
+            "registered_address": "11 Southpark Way, Buckie, Scotland, AB56 5AF"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.102,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=UNIKRAFT+LIMITED",
+          "query": "UNIKRAFT LIMITED",
+          "n_results": 2,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/SC859755",
+          "status": 200,
+          "elapsed_s": 0.097,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/SC859755",
+          "company_number": "SC859755",
+          "parsed": {
+            "company_name": "UNIKRAFT LIMITED",
+            "company_status": "Active",
+            "company_type": "Private limited Company",
+            "incorporation_date": "20 August 2025",
+            "sic_codes": [
+              "46900 - Non-specialised wholesale trade",
+              "47190 - Other retail sale in non-specialised stores",
+              "47910 - Retail sale via mail order houses or via Internet"
+            ],
+            "registered_address": "3 Fitzroy Place, Glasgow, Scotland, G3 7RH"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/search/companies",
+          "status": 200,
+          "elapsed_s": 0.144,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=PAPILLON+CONSULTING+LTD",
+          "query": "PAPILLON CONSULTING LTD",
+          "n_results": 20,
+          "top_result_is_target": true,
+          "returned_fields": [
+            "company_number",
+            "company_name",
+            "incorporation_meta",
+            "address"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/SC854864",
+          "status": 200,
+          "elapsed_s": 0.115,
+          "final_url": "https://find-and-update.company-information.service.gov.uk/company/SC854864",
+          "company_number": "SC854864",
+          "parsed": {
+            "company_name": "PAPILLON CONSULTING LTD",
+            "company_status": "Active",
+            "company_type": "Private limited Company",
+            "incorporation_date": "7 July 2025",
+            "sic_codes": [
+              "70229 - Management consultancy activities other than financial management"
+            ],
+            "registered_address": "Onpoint Accounting Lagmhor Office, Dunkeld, Perth, United Kingdom, PH8 0AD"
+          },
+          "page_mentions_VAT": false,
+          "external_website_links": []
+        },
+        {
+          "method": "GET",
+          "url": "https://api.company-information.service.gov.uk/company/01106260",
+          "status": 401,
+          "elapsed_s": 0.405,
+          "final_url": "https://api.company-information.service.gov.uk/company/01106260",
+          "note": "Official REST API without key",
+          "body": "{\"error\":\"Empty Authorization header\",\"type\":\"ch:service\"}"
+        }
+      ],
+      "summary": {
+        "companies_tested": 12,
+        "search_top_hit_correct": 11,
+        "profile_fields_displayed": [
+          "Accounts",
+          "Company status",
+          "Company type",
+          "Confirmation statement",
+          "Incorporated on",
+          "Nature of business (SIC)",
+          "Previous company names",
+          "Registered office address",
+          "Warning Confirmation statement overdue"
+        ],
+        "profiles_mentioning_VAT": 0,
+        "profiles_with_external_website_link": 0
+      },
+      "verdict": "DEAD END for VAT/website. Returns CRN, name, status, type, incorporation date, SIC, registered office. 0 profiles expose a VAT number or a company website. REST API needs a key (401) and its company-profile resource has no VAT or website field either."
+    },
+    {
+      "source": "HMRC 'Check a UK VAT number' (web service + REST API) and EU VIES",
+      "category": "vat_validation",
+      "tests": [
+        {
+          "method": "GET",
+          "url": "https://api.service.hmrc.gov.uk/organisations/vat/check-vat-number/lookup/220430231",
+          "status": 404,
+          "elapsed_s": 0.319,
+          "final_url": "https://api.service.hmrc.gov.uk/organisations/vat/check-vat-number/lookup/220430231",
+          "test": "api_v1_open",
+          "body": "{\"code\": \"MATCHING_RESOURCE_NOT_FOUND\", \"message\": \"A resource with the name in the request can not be found in the API\"}"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.service.hmrc.gov.uk/organisations/vat/check-vat-number/lookup/220430231",
+          "status": 401,
+          "elapsed_s": 0.122,
+          "final_url": "https://api.service.hmrc.gov.uk/organisations/vat/check-vat-number/lookup/220430231",
+          "test": "api_v2_oauth",
+          "body": "{\"code\": \"MISSING_CREDENTIALS\", \"message\": \"Authentication information is not provided\"}"
+        },
+        {
+          "test": "known_valid_vrn (Tesco)",
+          "target": "220430231",
+          "http_status": 303,
+          "redirect_location": "/check-vat-number/known",
+          "result_page_status": 429,
+          "outcome": "valid",
+          "name": null,
+          "address": null,
+          "name_status": "result_page_throttled",
+          "message": null,
+          "elapsed_s": 0.084
+        },
+        {
+          "test": "gb_prefixed_vrn",
+          "target": "GB220430231",
+          "http_status": 303,
+          "redirect_location": "/check-vat-number/known",
+          "result_page_status": 200,
+          "outcome": "valid",
+          "name": "TESCO PLC",
+          "address": "CIRRUS A SHIRE PARK KESTREL WAY WELWYN GARDEN CITY AL7 1GA GB",
+          "name_status": "ok",
+          "message": null,
+          "elapsed_s": 0.069
+        },
+        {
+          "test": "checksum_invalid_vrn",
+          "target": "123456789",
+          "http_status": 303,
+          "redirect_location": "/check-vat-number/unknown",
+          "result_page_status": 429,
+          "outcome": "not_found",
+          "name": null,
+          "address": null,
+          "name_status": null,
+          "message": null,
+          "elapsed_s": 0.08
+        },
+        {
+          "test": "checksum_valid_but_unissued",
+          "target": "100000132",
+          "http_status": 303,
+          "redirect_location": "/check-vat-number/unknown",
+          "result_page_status": 429,
+          "outcome": "not_found",
+          "name": null,
+          "address": null,
+          "name_status": null,
+          "message": null,
+          "elapsed_s": 0.073
+        },
+        {
+          "test": "company_number_8_digits",
+          "target": "01106260",
+          "http_status": 400,
+          "redirect_location": "",
+          "result_page_status": null,
+          "outcome": "form_error",
+          "name": null,
+          "address": null,
+          "name_status": null,
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start",
+          "elapsed_s": 0.069
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "RENISHAW P L C",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "ROTORK P.L.C.",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "HALMA PUBLIC LIMITED COMPANY",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "J.C. BAMFORD EXCAVATORS LIMITED",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "STAPLEFORD PLUMBING SERVICES LTD",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "MILNCROFT CONSTRUCTION LIMITED",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "ELECTRODEX LIMITED",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "ARMSON ELECTRICAL SERVICES LIMITED",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "ALLIGRA LTD",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "RL ELECTRICAL ENERGY SERVICES LTD",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "UNIKRAFT LIMITED",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "company_name_as_query",
+          "target": "PAPILLON CONSULTING LTD",
+          "http_status": 400,
+          "redirect_location": "",
+          "outcome": "form_error",
+          "message": "Enter the UK VAT number you want to check in the correct format What is the UK VAT number you want to check? This is 9 numbers, sometimes with ‘GB’ at the start"
+        },
+        {
+          "test": "name_and_address_returned_during_poc_run",
+          "examples": [
+            {
+              "vrn": "422900581",
+              "name": "RENISHAW PLC",
+              "address": "NEW MILLS WOTTON-UNDER-EDGE GLOS GL12 8JR GB",
+              "source": "hmrc_web"
+            },
+            {
+              "vrn": "183850248",
+              "name": "MARSHALLS MONO LTD",
+              "address": "LANDSCAPE HOUSE PREMIER WAY LOWFIELDS BUSINESS PARK ELLAND HX5 9HT GB",
+              "source": "hmrc_web_backoff_retry"
+            },
+            {
+              "vrn": "232555575",
+              "name": "KINGFISHER PLC",
+              "address": "1 PADDINGTON SQUARE LONDON W2 1GG GB",
+              "source": "hmrc_web_backoff_retry"
+            },
+            {
+              "vrn": "235983531",
+              "name": "COSTAIN ENGINEERING & CONSTR UCTION LIMI TED",
+              "address": "SEVENTH FLOOR 70 ST MARY AXE LONDON EC3A 8BE GB",
+              "source": "hmrc_web_backoff_retry"
+            },
+            {
+              "vrn": "196097366",
+              "name": "LITTLE FIRE DIGITAL LIMITED",
+              "address": "WORKS 57 OFFICE F3 57 CHIPPINGHOUSE ROAD SHEFFIELD S8 0ZF GB",
+              "source": "hmrc_web_backoff_retry"
+            }
+          ]
+        },
+        {
+          "method": "POST",
+          "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+          "status": 429,
+          "elapsed_s": 0.329,
+          "final_url": "https://www.tax.service.gov.uk/check-vat-number/known",
+          "redirects": [
+            303
+          ],
+          "test": "post_without_csrf_token_or_session"
+        },
+        {
+          "method": "GET",
+          "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/GB/vat/220430231",
+          "status": 200,
+          "elapsed_s": 1.275,
+          "final_url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/GB/vat/220430231",
+          "test": "vies_GB",
+          "vrn": "220430231",
+          "isValid": false,
+          "userError": "INVALID_INPUT",
+          "name": "---",
+          "vies_unavailable": null
+        },
+        {
+          "method": "GET",
+          "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/XI/vat/220430231",
+          "status": 200,
+          "elapsed_s": 1.95,
+          "final_url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/XI/vat/220430231",
+          "test": "vies_XI",
+          "vrn": "220430231",
+          "isValid": true,
+          "userError": "VALID",
+          "name": "TESCO PLC",
+          "vies_unavailable": null
+        },
+        {
+          "method": "GET",
+          "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/XI/vat/422900581",
+          "status": 200,
+          "elapsed_s": 1.949,
+          "final_url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/XI/vat/422900581",
+          "test": "vies_XI",
+          "vrn": "422900581",
+          "isValid": false,
+          "userError": "INVALID",
+          "name": "",
+          "vies_unavailable": null
+        }
+      ],
+      "summary": {
+        "company_name_queries": 12,
+        "company_name_queries_rejected_by_form": 12,
+        "result_pages_throttled_429": 3
+      },
+      "verdict": "VALIDATION ONLY, not discovery. The web service requires session cookies + a hidden csrfToken, accepts only a 9/12-digit VRN (optional GB prefix) and 303-redirects to /known (returns registered name + address) or /unknown. Company names and CRNs are rejected with a form error. Under load the /known result page returns HTTP 429 (no Retry-After) while the 303 verdict still comes back, so validity survives throttling but the name needed for matching does not. REST API v1 is retired (404) and v2 requires OAuth application credentials (401). VIES no longer covers GB (INVALID_INPUT); XI works only for Northern-Ireland-registered traders."
+    },
+    {
+      "source": "Contracts Finder (OCDS + search API)",
+      "category": "procurement",
+      "tests": [
+        {
+          "method": "GET",
+          "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search",
+          "status": 200,
+          "elapsed_s": 1.163,
+          "final_url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-10-18&publishedTo=2026-11-17&stages=award&limit=100",
+          "test": "ocds_award_releases_last_30d",
+          "releases": 100,
+          "parties": 218,
+          "identifier_schemes": {
+            "GB-COH": 45,
+            "GB-SRS": 39,
+            "GB-LAE": 5,
+            "GB-GOR": 1
+          },
+          "releases_with_vat_pattern": 0
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "status": 200,
+          "elapsed_s": 3.892,
+          "final_url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "test": "keyword_search",
+          "query": "RENISHAW P L C",
+          "hits": 29309,
+          "vat_phrase_in_payload": false,
+          "gb_vat_number_in_payload": false,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "status": 200,
+          "elapsed_s": 3.992,
+          "final_url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "test": "keyword_search",
+          "query": "ROTORK P.L.C.",
+          "hits": 25572,
+          "vat_phrase_in_payload": false,
+          "gb_vat_number_in_payload": false,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "status": 200,
+          "elapsed_s": 20.864,
+          "final_url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "test": "keyword_search",
+          "query": "HALMA PUBLIC LIMITED COMPANY",
+          "hits": 221981,
+          "vat_phrase_in_payload": true,
+          "gb_vat_number_in_payload": true,
+          "vat_excerpt": "d,CAPRICORN MEDIA PROTECTION LTD,MCKENNA SECURITY LTD,Constant Security Service,GB753091928,The ExcluSec Group Ltd,AEGIS GROUP OF COMPANIES LIMITED,Sec",
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "status": 200,
+          "elapsed_s": 17.129,
+          "final_url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "test": "keyword_search",
+          "query": "J.C. BAMFORD EXCAVATORS LIMITED",
+          "hits": 192901,
+          "vat_phrase_in_payload": false,
+          "gb_vat_number_in_payload": false,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "elapsed_s": 30.001,
+          "error": "ReadTimeout",
+          "test": "keyword_search",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "hits": null,
+          "vat_phrase_in_payload": null,
+          "gb_vat_number_in_payload": null,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "status": 200,
+          "elapsed_s": 18.098,
+          "final_url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "test": "keyword_search",
+          "query": "MILNCROFT CONSTRUCTION LIMITED",
+          "hits": 200140,
+          "vat_phrase_in_payload": false,
+          "gb_vat_number_in_payload": false,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "status": 200,
+          "elapsed_s": 15.259,
+          "final_url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "test": "keyword_search",
+          "query": "ELECTRODEX LIMITED",
+          "hits": 180460,
+          "vat_phrase_in_payload": false,
+          "gb_vat_number_in_payload": false,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "elapsed_s": 30.013,
+          "error": "ReadTimeout",
+          "test": "keyword_search",
+          "query": "ARMSON ELECTRICAL SERVICES LIMITED",
+          "hits": null,
+          "vat_phrase_in_payload": null,
+          "gb_vat_number_in_payload": null,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "status": 200,
+          "elapsed_s": 14.962,
+          "final_url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "test": "keyword_search",
+          "query": "ALLIGRA LTD",
+          "hits": 174441,
+          "vat_phrase_in_payload": false,
+          "gb_vat_number_in_payload": false,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "elapsed_s": 30.013,
+          "error": "ReadTimeout",
+          "test": "keyword_search",
+          "query": "RL ELECTRICAL ENERGY SERVICES LTD",
+          "hits": null,
+          "vat_phrase_in_payload": null,
+          "gb_vat_number_in_payload": null,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "status": 200,
+          "elapsed_s": 16.492,
+          "final_url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "test": "keyword_search",
+          "query": "UNIKRAFT LIMITED",
+          "hits": 180460,
+          "vat_phrase_in_payload": false,
+          "gb_vat_number_in_payload": false,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "status": 200,
+          "elapsed_s": 15.898,
+          "final_url": "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json",
+          "test": "keyword_search",
+          "query": "PAPILLON CONSULTING LTD",
+          "hits": 181847,
+          "vat_phrase_in_payload": false,
+          "gb_vat_number_in_payload": false,
+          "vat_excerpt": null,
+          "note": "hitCount far above any single supplier's notices: keyword search is token-OR (LIMITED/LTD match ~180k notices), so it cannot isolate a supplier"
+        }
+      ],
+      "summary": {
+        "releases": 100,
+        "parties": 218,
+        "identifier_schemes": {
+          "GB-COH": 45,
+          "GB-SRS": 39,
+          "GB-LAE": 5,
+          "GB-GOR": 1
+        },
+        "releases_with_vat_pattern": 0,
+        "keyword_searches_with_gb_vat_number_in_free_text": 1
+      },
+      "verdict": "DEAD END for VAT as a structured identifier. Supplier parties carry Companies House (GB-COH) or supplier-registration (GB-SRS) ids; no VAT identifier scheme exists in award releases. GB-format VAT numbers do appear incidentally in free-text fields (1 payload(s), e.g. a supplier list), unlinked to any party id, so they cannot be attributed to a company without the same verify+match step."
+    },
+    {
+      "source": "Find a Tender Service (OCDS release packages)",
+      "category": "procurement",
+      "tests": [
+        {
+          "method": "GET",
+          "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
+          "status": 200,
+          "elapsed_s": 1.435,
+          "final_url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=2026-11-14T00%3A00%3A00&limit=50",
+          "test": "ocds_release_packages_last_3d",
+          "releases": 50,
+          "parties": 227,
+          "identifier_schemes": {
+            "GB-PPON": 205,
+            "GB-COH": 29,
+            "GB-NHS": 1,
+            "GB-CHC": 1,
+            "GB-MPR": 1
+          },
+          "releases_with_vat_pattern": 0
+        }
+      ],
+      "summary": {
+        "releases": 50,
+        "parties": 227,
+        "identifier_schemes": {
+          "GB-PPON": 205,
+          "GB-COH": 29,
+          "GB-NHS": 1,
+          "GB-CHC": 1,
+          "GB-MPR": 1
+        },
+        "releases_with_vat_pattern": 0
+      },
+      "verdict": "Identifier schemes observed are registry IDs (GB-COH / GB-PPON etc.); no VAT field."
+    },
+    {
+      "source": "The Gazette (all notices + insolvency feed)",
+      "category": "public_records",
+      "tests": [
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.267,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=RENISHAW+P+L+C&results-page-size=10",
+          "query": "RENISHAW P L C",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.006,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=ROTORK+P.L.C.&results-page-size=10",
+          "query": "ROTORK P.L.C.",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": false
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.007,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=HALMA+PUBLIC+LIMITED+COMPANY&results-page-size=10",
+          "query": "HALMA PUBLIC LIMITED COMPANY",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.006,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=J.C.+BAMFORD+EXCAVATORS+LIMITED&results-page-size=10",
+          "query": "J.C. BAMFORD EXCAVATORS LIMITED",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": false
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.007,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=STAPLEFORD+PLUMBING+SERVICES+LTD&results-page-size=10",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.006,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=MILNCROFT+CONSTRUCTION+LIMITED&results-page-size=10",
+          "query": "MILNCROFT CONSTRUCTION LIMITED",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.009,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=ELECTRODEX+LIMITED&results-page-size=10",
+          "query": "ELECTRODEX LIMITED",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.007,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=ARMSON+ELECTRICAL+SERVICES+LIMITED&results-page-size=10",
+          "query": "ARMSON ELECTRICAL SERVICES LIMITED",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.006,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=ALLIGRA+LTD&results-page-size=10",
+          "query": "ALLIGRA LTD",
+          "notices": 3,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.007,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=RL+ELECTRICAL+ENERGY+SERVICES+LTD&results-page-size=10",
+          "query": "RL ELECTRICAL ENERGY SERVICES LTD",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.007,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=UNIKRAFT+LIMITED&results-page-size=10",
+          "query": "UNIKRAFT LIMITED",
+          "notices": 9,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/all-notices/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.006,
+          "final_url": "https://www.thegazette.co.uk/all-notices/notice/data.json?text=PAPILLON+CONSULTING+LTD&results-page-size=10",
+          "query": "PAPILLON CONSULTING LTD",
+          "notices": 10,
+          "vat_pattern": false,
+          "crn_present": true
+        },
+        {
+          "method": "GET",
+          "url": "https://www.thegazette.co.uk/insolvency/notice/data.json",
+          "status": 200,
+          "elapsed_s": 0.009,
+          "final_url": "https://www.thegazette.co.uk/insolvency/notice/data.json?results-page-size=50",
+          "test": "latest_50_insolvency_notices",
+          "notices": 50,
+          "with_vat_pattern": 0,
+          "with_company_number_phrase": 35
+        }
+      ],
+      "summary": {
+        "company_queries": 12,
+        "notices_returned": 112,
+        "queries_with_vat_pattern": 0,
+        "queries_with_crn": 10,
+        "insolvency_feed": {
+          "notices": 50,
+          "with_vat_pattern": 0,
+          "with_company_number_phrase": 35
+        }
+      },
+      "verdict": "DEAD END for VAT. Notices identify companies by name and Companies House number; VAT numbers are not part of the notice schema."
+    },
+    {
+      "source": "Adjacent identifiers (CRN, EORI, charity, FCA, ICO) + FR contrast",
+      "category": "adjacent",
+      "tests": [
+        {
+          "test": "crn_to_vrn_derivation",
+          "n_pairs": 8,
+          "pairs": [
+            {
+              "company": "TESCO PLC",
+              "crn": "00445790",
+              "vrn": "220430231",
+              "vrn_equals_crn": false,
+              "vrn_first7_equals_crn_last7": false,
+              "vrn_equals_crn7_plus_mod97_check": false,
+              "vrn_equals_crn7_plus_mod9755_check": false,
+              "positional_digit_matches_of_9": 2
+            },
+            {
+              "company": "RENISHAW PLC",
+              "crn": "01106260",
+              "vrn": "422900581",
+              "vrn_equals_crn": false,
+              "vrn_first7_equals_crn_last7": false,
+              "vrn_equals_crn7_plus_mod97_check": false,
+              "vrn_equals_crn7_plus_mod9755_check": false,
+              "positional_digit_matches_of_9": 1
+            },
+            {
+              "company": "TRAVIS PERKINS PLC",
+              "crn": "00824821",
+              "vrn": "408556737",
+              "vrn_equals_crn": false,
+              "vrn_first7_equals_crn_last7": false,
+              "vrn_equals_crn7_plus_mod97_check": false,
+              "vrn_equals_crn7_plus_mod9755_check": false,
+              "positional_digit_matches_of_9": 1
+            },
+            {
+              "company": "KINGFISHER PLC",
+              "crn": "03006378",
+              "vrn": "232555575",
+              "vrn_equals_crn": false,
+              "vrn_first7_equals_crn_last7": false,
+              "vrn_equals_crn7_plus_mod97_check": false,
+              "vrn_equals_crn7_plus_mod9755_check": false,
+              "positional_digit_matches_of_9": 1
+            },
+            {
+              "company": "RS COMPONENTS LIMITED",
+              "crn": "01002091",
+              "vrn": "243164091",
+              "vrn_equals_crn": false,
+              "vrn_first7_equals_crn_last7": false,
+              "vrn_equals_crn7_plus_mod97_check": false,
+              "vrn_equals_crn7_plus_mod9755_check": false,
+              "positional_digit_matches_of_9": 3
+            },
+            {
+              "company": "VICTREX PLC",
+              "crn": "02793780",
+              "vrn": "604782539",
+              "vrn_equals_crn": false,
+              "vrn_first7_equals_crn_last7": false,
+              "vrn_equals_crn7_plus_mod97_check": false,
+              "vrn_equals_crn7_plus_mod9755_check": false,
+              "positional_digit_matches_of_9": 2
+            },
+            {
+              "company": "FOOTPRINT SOFTWARE LTD",
+              "crn": "05246159",
+              "vrn": "887276955",
+              "vrn_equals_crn": false,
+              "vrn_first7_equals_crn_last7": false,
+              "vrn_equals_crn7_plus_mod97_check": false,
+              "vrn_equals_crn7_plus_mod9755_check": false,
+              "positional_digit_matches_of_9": 3
+            },
+            {
+              "company": "LITTLE FIRE DIGITAL LIMITED",
+              "crn": "09201920",
+              "vrn": "196097366",
+              "vrn_equals_crn": false,
+              "vrn_first7_equals_crn_last7": false,
+              "vrn_equals_crn7_plus_mod97_check": false,
+              "vrn_equals_crn7_plus_mod9755_check": false,
+              "positional_digit_matches_of_9": 0
+            }
+          ],
+          "any_derivation_rule_holds": false,
+          "expected_positional_matches_by_chance": 0.9,
+          "note": "CRNs (Companies House) and VRNs (HMRC) come from independent issuing sequences. Any rank correlation between them reflects issue date (older firms have both lower CRNs and older VRNs), not derivability; no deterministic rule maps one to the other."
+        },
+        {
+          "method": "GET",
+          "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/FR/vat/03552081317",
+          "status": 200,
+          "elapsed_s": 7.494,
+          "final_url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/FR/vat/03552081317",
+          "test": "france_siren_to_vat_derivation",
+          "siren": "552081317",
+          "derived_vat": "FR03552081317",
+          "vies_isValid": true,
+          "vies_name": "ELECTRICITE DE FRANCE",
+          "vies_unavailable": null
+        },
+        {
+          "method": "GET",
+          "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/FR/vat/59542051180",
+          "status": 200,
+          "elapsed_s": 9.331,
+          "final_url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/FR/vat/59542051180",
+          "test": "france_siren_to_vat_derivation",
+          "siren": "542051180",
+          "derived_vat": "FR59542051180",
+          "vies_isValid": true,
+          "vies_name": "SE TOTALENERGIES SE",
+          "vies_unavailable": null
+        },
+        {
+          "method": "POST",
+          "url": "https://api.service.hmrc.gov.uk/customs/eori/lookup/check-multiple-eori",
+          "status": 200,
+          "elapsed_s": 0.471,
+          "final_url": "https://api.service.hmrc.gov.uk/customs/eori/lookup/check-multiple-eori",
+          "test": "eori_from_vrn",
+          "checked": 9,
+          "valid": 6,
+          "results": [
+            {
+              "eori": "GB220430231000",
+              "valid": true,
+              "processingDate": "2026-11-17T16:45:13+00:00"
+            },
+            {
+              "eori": "GB604782539000",
+              "valid": true,
+              "processingDate": "2026-11-17T16:45:13+00:00"
+            },
+            {
+              "eori": "GB123456789000",
+              "valid": false,
+              "processingDate": "2026-11-17T16:45:13+00:00"
+            },
+            {
+              "eori": "GB243164091000",
+              "valid": true,
+              "processingDate": "2026-11-17T16:45:13+00:00"
+            },
+            {
+              "eori": "GB408556737000",
+              "valid": true,
+              "processingDate": "2026-11-17T16:45:13+00:00"
+            },
+            {
+              "eori": "GB422900581000",
+              "valid": true,
+              "processingDate": "2026-11-17T16:45:13+00:00"
+            },
+            {
+              "eori": "GB887276955000",
+              "valid": false,
+              "processingDate": "2026-11-17T16:45:13+00:00"
+            },
+            {
+              "eori": "GB232555575000",
+              "valid": true,
+              "processingDate": "2026-11-17T16:45:13+00:00"
+            },
+            {
+              "eori": "GB196097366000",
+              "valid": false,
+              "processingDate": "2026-11-17T16:45:13+00:00"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://api.charitycommission.gov.uk/register/api/allcharitydetails/1000000/0",
+          "status": 401,
+          "elapsed_s": 0.496,
+          "final_url": "https://api.charitycommission.gov.uk/register/api/allcharitydetails/1000000/0",
+          "test": "charity_commission_api",
+          "body_excerpt": "{ \"statusCode\": 401, \"message\": \"Access denied due to missing subscription key. Make sure to include subscription key when making requests t",
+          "vat_pattern": false
+        },
+        {
+          "method": "GET",
+          "url": "https://register.fca.org.uk/services/V0.1/Firm/122702",
+          "status": 403,
+          "elapsed_s": 0.229,
+          "final_url": "https://register.fca.org.uk/services/V0.1/Firm/122702",
+          "test": "fca_register_api",
+          "body_excerpt": "{\"Success\":\"false\", \"Sorry, this page is not available. Missing Headers.\"}",
+          "vat_pattern": false
+        },
+        {
+          "method": "GET",
+          "url": "https://register.fca.org.uk/s/search",
+          "status": 200,
+          "elapsed_s": 0.423,
+          "final_url": "https://register.fca.org.uk/s/search?q=renishaw&type=Companies",
+          "test": "fca_register_web_search",
+          "body_excerpt": "NewRegister Loading × Sorry to interrupt CSS Error Refresh",
+          "vat_pattern": false
+        },
+        {
+          "method": "GET",
+          "url": "https://ico.org.uk/ESDWebPages/Search",
+          "status": 403,
+          "elapsed_s": 0.219,
+          "final_url": "https://ico.org.uk/ESDWebPages/Search?Name=renishaw",
+          "test": "ico_data_protection_register",
+          "body_excerpt": "Just a moment... Enable JavaScript and cookies to continue",
+          "vat_pattern": false
+        }
+      ],
+      "verdict": "UK VRNs are NOT derivable from CRNs (independent number spaces, no equality, Mod-97 does not link them). France contrast: FR VAT = key(SIREN) is computable and VIES confirms it. GB EORIs are derived FROM the VRN (GB+VRN+000), so the EORI API can corroborate a VRN but cannot discover one; there is no EORI-by-name search. Charity Commission and FCA APIs require keys, the FCA register is a JS app and the ICO register is behind a Cloudflare challenge; none publish VAT numbers."
+    },
+    {
+      "source": "Open web discovery (search engines, Clearbit autocomplete, domain guessing) + site crawl",
+      "category": "open_web",
+      "tests": [
+        {
+          "engine": "bing",
+          "query": "RENISHAW P L C",
+          "results": 10,
+          "relevant_results": 0,
+          "top_hosts": [
+            "google.com",
+            "zhihu.com"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "ROTORK P.L.C.",
+          "results": 10,
+          "relevant_results": 5,
+          "top_hosts": [
+            "rotork.com",
+            "wikipedia.org",
+            "abb.com",
+            "controltech.ro",
+            "youtube.com"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "HALMA PUBLIC LIMITED COMPANY",
+          "results": 10,
+          "relevant_results": 7,
+          "top_hosts": [
+            "halma.com",
+            "wikipedia.org",
+            "linkedin.com"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "J.C. BAMFORD EXCAVATORS LIMITED",
+          "results": 10,
+          "relevant_results": 0,
+          "top_hosts": [
+            "wikipedia.org",
+            "youtube.com",
+            "just.ro",
+            "dailymotion.com",
+            "wiktionary.org"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "results": 10,
+          "relevant_results": 0,
+          "top_hosts": [
+            "whatsapp.com",
+            "wa.me"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "MILNCROFT CONSTRUCTION LIMITED",
+          "results": 10,
+          "relevant_results": 0,
+          "top_hosts": [
+            "ziare.com",
+            "ziar.com",
+            "e-ziare.ro",
+            "ziare.com.ro",
+            "ziare.ro"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "ELECTRODEX LIMITED",
+          "results": 10,
+          "relevant_results": 0,
+          "top_hosts": [
+            "google.com"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "ARMSON ELECTRICAL SERVICES LIMITED",
+          "results": 10,
+          "relevant_results": 0,
+          "top_hosts": [
+            "avanza.se",
+            "wielerflits.nl",
+            "finansavisen.no"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "ALLIGRA LTD",
+          "results": 10,
+          "relevant_results": 0,
+          "top_hosts": [
+            "microsoft.com",
+            "github.com",
+            "oracle.com",
+            "brew.sh",
+            "geeksforgeeks.org"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "RL ELECTRICAL ENERGY SERVICES LTD",
+          "results": 10,
+          "relevant_results": 0,
+          "top_hosts": [
+            "wikipedia.org",
+            "tripadvisor.com",
+            "bahamasairtours.com",
+            "tripadvisor.ca",
+            "nassaubahamasguide.com"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "UNIKRAFT LIMITED",
+          "results": 10,
+          "relevant_results": 0,
+          "top_hosts": [
+            "movilforum.com"
+          ]
+        },
+        {
+          "engine": "bing",
+          "query": "PAPILLON CONSULTING LTD",
+          "results": 8,
+          "relevant_results": 0,
+          "top_hosts": [
+            "techcult.com",
+            "mcdonalds.com.sg",
+            "google.com",
+            "africazine.com",
+            "restaurantbusinessonline.com"
+          ]
+        },
+        {
+          "method": "GET",
+          "url": "https://www.bing.com/search",
+          "status": 200,
+          "elapsed_s": 0.157,
+          "final_url": "https://www.bing.com/search?q=STAPLEFORD+PLUMBING+SERVICES+LTD",
+          "engine": "bing",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "block_signal": null
+        },
+        {
+          "method": "GET",
+          "url": "https://html.duckduckgo.com/html/",
+          "status": 202,
+          "elapsed_s": 0.364,
+          "final_url": "https://html.duckduckgo.com/html/?q=STAPLEFORD+PLUMBING+SERVICES+LTD",
+          "engine": "duckduckgo_html",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "block_signal": "anomaly_page"
+        },
+        {
+          "method": "GET",
+          "url": "https://www.mojeek.com/search",
+          "status": 403,
+          "elapsed_s": 0.342,
+          "final_url": "https://www.mojeek.com/search?q=STAPLEFORD+PLUMBING+SERVICES+LTD",
+          "engine": "mojeek",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "block_signal": null
+        },
+        {
+          "method": "GET",
+          "url": "https://www.startpage.com/do/search",
+          "status": 200,
+          "elapsed_s": 0.361,
+          "final_url": "https://www.startpage.com/do/search?query=STAPLEFORD+PLUMBING+SERVICES+LTD",
+          "engine": "startpage",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "block_signal": "js_challenge"
+        },
+        {
+          "method": "GET",
+          "url": "https://search.brave.com/search",
+          "status": 429,
+          "elapsed_s": 0.396,
+          "final_url": "https://search.brave.com/search?q=STAPLEFORD+PLUMBING+SERVICES+LTD",
+          "engine": "brave",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "block_signal": "captcha"
+        },
+        {
+          "method": "GET",
+          "url": "https://search.yahoo.com/search",
+          "status": 500,
+          "elapsed_s": 0.333,
+          "final_url": "https://search.yahoo.com/search?p=STAPLEFORD+PLUMBING+SERVICES+LTD",
+          "engine": "yahoo",
+          "query": "STAPLEFORD PLUMBING SERVICES LTD",
+          "block_signal": null
+        }
+      ],
+      "summary": {
+        "bing_relevance_diag_12": {
+          "queries": 12,
+          "queries_with_any_relevant_result": 2
+        },
+        "diagnostic_12": {
+          "n": 12,
+          "domain_found": 7,
+          "domain_source": {
+            "wikidata_crn": 1,
+            "clearbit": 4,
+            "bing": 1,
+            "none": 5,
+            "name_guess": 1
+          },
+          "site_reachable": 7,
+          "vat_text_on_site": 1,
+          "verified_match": 1,
+          "outcomes": {
+            "verified_match": 1,
+            "no_vat_on_site": 6,
+            "no_domain_found": 5
+          }
+        },
+        "all_60": {
+          "n": 60,
+          "domain_found": 30,
+          "domain_source": {
+            "wikidata_crn": 5,
+            "clearbit": 16,
+            "bing": 2,
+            "none": 30,
+            "name_guess": 7
+          },
+          "site_reachable": 30,
+          "vat_text_on_site": 10,
+          "verified_match": 6,
+          "outcomes": {
+            "verified_match": 6,
+            "no_vat_on_site": 20,
+            "no_domain_found": 30,
+            "related_entity_only": 3,
+            "vat_candidates_invalid": 1
+          }
+        }
+      },
+      "verdict": "The ONLY source in this study that yields VAT numbers for a company not already identified by VRN. Bottleneck is domain discovery: scripted search is blocked (captcha / JS challenge / 429 / 500) or silently degraded (Bing returns HTTP 200 with irrelevant, IP-localised results), so production needs a licensed search API or a pre-built company->domain index. Free entity-linked source: Wikidata P2622 (Companies House ID) -> P856 (website), large companies only. Crawl targets: footer, /terms, /legal, /privacy, /contact, /about."
+    }
+  ],
+  "hmrc_http_log": [
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.31,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 303,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 0,
+      "content_type": "",
+      "redirects": [],
+      "elapsed_s": 0.084,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/known",
+      "method": "GET",
+      "status": 429,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/known",
+      "bytes": 0,
+      "content_type": "",
+      "redirects": [],
+      "elapsed_s": 0.082,
+      "step": "hmrc_result_page"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.067,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 303,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 0,
+      "content_type": "",
+      "redirects": [],
+      "elapsed_s": 0.069,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/known",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/known",
+      "bytes": 15430,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.068,
+      "step": "hmrc_result_page"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.068,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 303,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 0,
+      "content_type": "",
+      "redirects": [],
+      "elapsed_s": 0.08,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/unknown",
+      "method": "GET",
+      "status": 429,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/unknown",
+      "bytes": 0,
+      "content_type": "",
+      "redirects": [],
+      "elapsed_s": 0.078,
+      "step": "hmrc_result_page"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.069,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 303,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 0,
+      "content_type": "",
+      "redirects": [],
+      "elapsed_s": 0.073,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/unknown",
+      "method": "GET",
+      "status": 429,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/unknown",
+      "bytes": 0,
+      "content_type": "",
+      "redirects": [],
+      "elapsed_s": 0.07,
+      "step": "hmrc_result_page"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.066,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17349,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.069,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.07,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17355,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.071,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.067,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17354,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.1,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.071,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17369,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.071,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.071,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17372,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.074,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.068,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17373,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.072,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.074,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17371,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.073,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.066,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17359,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.07,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.064,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17375,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.066,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.08,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17352,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.082,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.086,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17374,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.071,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.07,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17357,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.075,
+      "step": "hmrc_post"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "GET",
+      "status": 200,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 16500,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.067,
+      "step": "hmrc_get_form"
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "method": "POST",
+      "status": 400,
+      "final_url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
+      "bytes": 17364,
+      "content_type": "text/html; charset=UTF-8",
+      "redirects": [],
+      "elapsed_s": 0.07,
+      "step": "hmrc_post"
+    }
+  ],
+  "development_observations": {
+    "hmrc_result_page_throttle_2026-11-17": {
+      "how": "after three full pipeline runs (~60 HMRC lookups in ~40 min from one IP), probed one known-valid VRN once per minute with fresh sessions",
+      "observed": "POST always 303 -> /known; GET /known returned 429 from 12:31:14 to 12:40:18 (10 probes) and 200 at 12:41:19 -> throttle window ~10 min, no Retry-After header",
+      "implication": "budget lookups (<= ~1 per 3 s, cache by VRN) and treat the 303 Location as the validity verdict; name retrieval needs back-off or an authenticated API v2 client"
+    },
+    "hmrc_throttle_in_pipeline_runs_2026-11-17": {
+      "note": "recorded from pipeline runs whose raw hmrc_http_log.json was later overwritten; the final run served all 17 verdicts from data/hmrc_cache.json and made 0 HMRC requests",
+      "run_1_~13:20_utc": {
+        "posts": 16,
+        "posts_303": 16,
+        "result_pages_200": 3,
+        "result_pages_429": 13,
+        "inline_backoff_120_300_600s": "3 attempts, all 429",
+        "resume_10min_rounds": "12 attempts: 9x429 then 3x200; first name after 7 consecutive 429 rounds (~70 min)"
+      },
+      "run_2_~15:40_utc_after_wikidata_fix": {
+        "posts": 8,
+        "posts_303": 8,
+        "result_pages_200": 5,
+        "result_pages_429": 3,
+        "resume_10min_rounds": "round 1: 196097366 200, 887276955 429; round 2: 887276955 200"
+      }
+    },
+    "search_engines": "Bing served IP-localised junk (Romanian/Chinese sites) for most scripted queries; Mojeek captcha, Startpage JS challenge, Brave 429, Yahoo 500, DuckDuckGo 202 anomaly page"
+  },
+  "conclusion": "No UK public registry, procurement or gazette source maps company -> VAT number. HMRC (and the EORI API) only validate a VRN you already have. The viable discovery path is company website -> VAT text in footer/legal pages -> Mod-97/9755 -> HMRC validation -> entity match against the Companies House name/postcode."
+}
